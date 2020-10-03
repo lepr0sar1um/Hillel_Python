@@ -42,28 +42,35 @@
 # print(len(set(my_str.lower())))
 # Множество хрнаит в себе уникальные значения без дубликатов
 
-my_set_1 = {1, 2, 3, 7}
-my_set_2 = {2, 3, 4}
+# my_set_1 = {1, 2, 3, 7}
+# my_set_2 = {2, 3, 4}
 
-inter = my_set_1.intersection(my_set_2)
+# inter = my_set_1.intersection(my_set_2)
 # возвращает пересекающиеся результаты из двух множеств
 # в данном слуае 2 и 3
-print(inter)
+# print(inter)
 
 # my_set_1.intersection_update(my_set_2)
 # обновляет объекты в my_set_1, результат как в предыдщем примере
 # print(my_set_1)
 
 # объединение двух множеств и выводит уникальные значения
-union = my_set_1.union(my_set_2)
-print(union)
+# union = my_set_1.union(my_set_2)
+# print(union)
 
 # создается новое множество с отличающимися объектами из двух список
 #
-dif = my_set_1.difference(my_set_2)
-print(dif)
+# dif = my_set_1.difference(my_set_2)
+# print(dif)
 
 # создается новое множество
 #
-sim_dif = my_set_1.symmetric_difference(my_set_2)
-print(sim_dif)
+# sim_dif = my_set_1.symmetric_difference(my_set_2)
+# print(sim_dif)
+
+# Генератор списпок с условием
+my_list = [1, -2, 3, -4, 5, -6]
+new_list = [value ** 2 if value > 0 else value for value in my_list]
+# [<value_when_condition_true> if <condition> else <value_when_condition_false> for value in list_name]
+print(new_list)
+
