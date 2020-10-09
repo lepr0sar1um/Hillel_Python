@@ -38,8 +38,8 @@ def new_dict_of_key_and_value(dict_a, dict_b):
 # if the key is in two dictionaries, put the pair {key: [value_from_dict_a, value_from_dict_b]}
 def joined_dict(dict_a, dict_b):
     return {key: [dict_a.get(key), dict_b.get(key)] if key in dict_a.keys() & dict_b.keys() else dict_a.get(
-        # will take a couple of values for one key in the intersection of dict_a and dict_b
         key) or dict_b.get(key) for key in
+            # will take a couple of values for one key in the intersection of dict_a and dict_b
             # if no intersection will input a couple of key : value from the union of dict_a and dict_b as is
             dict_a.keys() | dict_b.keys()}
 
