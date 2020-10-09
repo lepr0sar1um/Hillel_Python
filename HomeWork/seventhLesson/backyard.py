@@ -14,7 +14,7 @@ def random_tuple():
 
 def random_dict():
     return {key: random.randint(1, 100) for key in
-            list(''.join(random.choice(letters) for _ in range(random.randint(1, 3))))}
+            list(''.join(random.choice(letters) for _ in range(random.randint(1, 10))))}
 
 
 # Return a list of the keys that are in both dictionaries
