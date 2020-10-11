@@ -1,10 +1,6 @@
 from random import randint
 
 
-# def sort_ip_key():
-#     return [int(part) for part in ip_list.split(".")]
-
-
 def get_rand_0_255():
     return randint(0, 255)
 
@@ -14,12 +10,16 @@ def get_ip():
     return ".".join(ip_parts)
 
 
+def sort_ip_key(ip):
+    return [int(part) for part in ip.split(".")]
+
+
 def generate_list_of_ip_addresses(number: int, repeat=True, sort=False) -> list:
     ip_list = []
     for _ in range(number):
         ip_list.append(get_ip())
     if not repeat:
         ip_list = list(set(ip_list))
-    # if sort:
-    #     return ip_list.sort(key=sort_ip_key)
+    if sort:
+        ip_list.sort(key=sort_ip_key)
     return ip_list
