@@ -1,4 +1,4 @@
-from Hillel_Python.HomeWork.seventhLesson import backyard as make
+from Hillel_Python.HomeWork.lesson7 import backyard as make
 
 my_list = make.random_list(20, 1, 100)
 make.my_print(my_list)
