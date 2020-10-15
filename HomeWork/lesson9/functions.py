@@ -15,7 +15,7 @@ def find_date(authors: list) -> list:
     return dates
 
 
-def convert_to_date(date_string):
+def convert_to_date(date_string: str) -> str:
     return str(datetime.strptime(re.sub(r'(\d+)[a-z]+', r'\1', date_string),  '%d %B %Y').strftime('%d/%m/%Y'))
 
 
