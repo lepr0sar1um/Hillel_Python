@@ -24,7 +24,7 @@ def create_dict(dates: list) -> list:
             line in dates]
 
 
-def join_dates(dates: list) -> dict:
+def join_dates(dates: list) -> list:
     b_date_list = [line for line in dates if "birthday" in line]
     d_date_list = [line for line in dates if "death" in line]
 
@@ -37,4 +37,4 @@ def join_dates(dates: list) -> dict:
     join_date = [{"name": key, "b_date": b_date_dict.get(key), "d_date": d_date_dict.get(key)} for key in
                  b_date_dict.keys() | d_date_dict.keys()]
 
-    print(join_date)
+    return join_date
