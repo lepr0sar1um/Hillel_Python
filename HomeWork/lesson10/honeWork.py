@@ -11,3 +11,4 @@ json_file = "file.json"
 f.file_writer(txt_file, my_str)
 f.file_writer(csv_file, my_list)
 f.file_writer(json_file, my_dict)
+f.file_writer("file", my_str)
