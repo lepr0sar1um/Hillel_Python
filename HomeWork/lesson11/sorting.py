@@ -9,7 +9,6 @@ def by_text_length(tmp_dict):
 
 def by_death_date(tmp_dict):
     # знаю, это стремный костыль, но как сделать умнее я не придумал :(
-    reg_exp = r'\d{1,4}\s..'
     death_date = tmp_dict['years'].split('–')[-1].replace('c. ', '').replace('.', '').strip()
     if 'BC' in death_date:
         return -int(death_date.split(' ')[0])
