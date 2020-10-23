@@ -1,6 +1,4 @@
 import json
-import re
-
 
 json_file = "data.json"
 
@@ -10,11 +8,16 @@ def by_text_length(tmp_dict):
 
 
 def by_death_date(tmp_dict):
-    pass
+    # знаю, это стремный костыль, но как сделать умнее я не придумал :(
+    reg_exp = r'\d{1,4}\s..'
+    death_date = tmp_dict['years'].split('–')[-1].replace('c. ', '').replace('.', '').strip()
+    if 'BC' in death_date:
+        return -int(death_date.split(' ')[0])
+    return int(death_date)
 
 
 def by_second_name(tmp_dict):
-    pass
+    return tmp_dict['name'].split(' ')[-1]
 
 
 def read_file(path):
@@ -24,12 +27,13 @@ def read_file(path):
 
 
 def sort_by_second_name(data):
-    data = re.sub(r'c. ', data['years'])
-
+    sorted_dict = sorted(data, key=by_second_name)
+    return sorted_dict
 
 
 def sort_by_death_date(data):
-    pass
+    sorted_dict = sorted(data, key=by_death_date)
+    return sorted_dict
 
 
 def sort_by_text_length(data):
@@ -38,4 +42,7 @@ def sort_by_text_length(data):
 
 
 data = read_file(json_file)
-print(sort_by_text_length(data))
+# print(sort_by_text_length(data))
+# print(sort_by_second_name(data))
+print(sort_by_death_date(data))
+
