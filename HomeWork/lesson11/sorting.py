@@ -41,7 +41,5 @@ def sort_by_text_length(data):
 
 
 data = read_file(json_file)
-# print(sort_by_text_length(data))
-# print(sort_by_second_name(data))
-print(sort_by_death_date(data))
+
 
