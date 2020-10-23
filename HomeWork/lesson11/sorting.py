@@ -41,5 +41,3 @@ def sort_by_text_length(data):
 
 
 data = read_file(json_file)
-
-
