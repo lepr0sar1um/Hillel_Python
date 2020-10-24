@@ -57,6 +57,12 @@ class PathInfo:
             else:
                 self.folders.append(item)
 
+    def show_files(self):
+        return self.files
+
+    def show_folders(self):
+        return self.folders
+
     def __repr__(self):
         return f"Files: {self.files}\n Folders: {self.folders}"
 
@@ -64,3 +70,5 @@ class PathInfo:
 path = os.curdir
 path_info = PathInfo(path)
 print(path_info)
+
+print(path_info.files)
