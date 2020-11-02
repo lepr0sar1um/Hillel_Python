@@ -1,17 +1,18 @@
 import Hillel_Python.HomeWork.lesson14.Units as U
+from typing import Final
 
-MAGIC_TYPE = {
+MAGIC_TYPE: Final = {
     'f': 'Fire',
     'a': 'Air',
     'w': 'Water'
 }
 
-BOW_TYPE = {
+BOW_TYPE: Final = {
     'b': 'Bow',
     'cb': 'Crossbow'
 }
 
-WEAPON_TYPE = {
+WEAPON_TYPE: Final = {
     's': 'Sword',
     'a': 'Axe',
     'p': 'Peak'
