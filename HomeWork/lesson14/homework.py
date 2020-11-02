@@ -1,3 +1,5 @@
+import sys
+
 import Hillel_Python.HomeWork.lesson14.Units as U
 from typing import Final
 
@@ -22,6 +24,8 @@ mage = U.Mage('John', 'SunShine', magic=MAGIC_TYPE['f'])
 archer = U.Archer('Jack', 'MoonShine', bow_type=BOW_TYPE['cb'])
 knight = U.Knight('John', 'RiverFrost', weapon_type=WEAPON_TYPE['a'])
 
+sys.stdout = open('output.txt', 'w')
+
 print(mage)
 print(archer)
 print(knight)
@@ -45,3 +49,5 @@ print('------------')
 print(mage)
 print(archer)
 print(knight)
+
+sys.stdout.close()
