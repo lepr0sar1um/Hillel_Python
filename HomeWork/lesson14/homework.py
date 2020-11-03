@@ -1,7 +1,7 @@
 import sys
+from typing import Final
 
 import Hillel_Python.HomeWork.lesson14.Units as U
-from typing import Final
 
 MAGIC_TYPE: Final = {
     'f': 'Fire',
@@ -32,9 +32,9 @@ print(knight)
 
 print('------------')
 
-mage.health = 98
-archer.health = 71
-knight.health = 90
+mage.health = 88
+archer.health = 91
+knight.health = 9
 
 mage.heal()
 archer.heal()

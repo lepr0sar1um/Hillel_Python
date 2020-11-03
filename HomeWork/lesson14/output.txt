@@ -17,25 +17,25 @@ Strength = 1,
 Dexterity = 1, 
 Intellect = 1 
 ------------
-I have been healed on 2 points!
 I have been healed on 10 points!
+I have been healed on 9 points!
 I have been healed on 10 points!
 ------------
 I am John, and I am a Fire Mage. I have such stats: 
 Clan - SunShine
-Health = 100, 
+Health = 98, 
 Strength = 1, 
 Dexterity = 1, 
 Intellect = 2 
 I am Jack, and I am a Crossbow Archer. I have such stats: 
 Clan - MoonShine
-Health = 81, 
+Health = 100, 
 Strength = 1, 
 Dexterity = 2, 
 Intellect = 1 
 I am John, and I am a Axe Knight. I have such stats: 
 Clan - RiverFrost
-Health = 100, 
+Health = 19, 
 Strength = 2, 
 Dexterity = 1, 
 Intellect = 1 
