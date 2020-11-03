@@ -1,28 +1,27 @@
 import sys
-from typing import Final
 
-import Hillel_Python.HomeWork.lesson14.Units as U
+from .Units import Mage, Archer, Knight
 
-MAGIC_TYPE: Final = {
+MAGIC_TYPE = {
     'f': 'Fire',
     'a': 'Air',
     'w': 'Water'
 }
 
-BOW_TYPE: Final = {
+BOW_TYPE = {
     'b': 'Bow',
     'cb': 'Crossbow'
 }
 
-WEAPON_TYPE: Final = {
+WEAPON_TYPE = {
     's': 'Sword',
     'a': 'Axe',
     'p': 'Peak'
 }
 
-mage = U.Mage('John', 'SunShine', magic=MAGIC_TYPE['f'])
-archer = U.Archer('Jack', 'MoonShine', bow_type=BOW_TYPE['cb'])
-knight = U.Knight('John', 'RiverFrost', weapon_type=WEAPON_TYPE['a'])
+mage = Mage('John', 'SunShine', magic=MAGIC_TYPE['f'])
+archer = Archer('Jack', 'MoonShine', bow_type=BOW_TYPE['cb'])
+knight = Knight('John', 'RiverFrost', weapon_type=WEAPON_TYPE['a'])
 
 sys.stdout = open('output.txt', 'w')
 
