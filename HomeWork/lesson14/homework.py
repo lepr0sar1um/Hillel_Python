@@ -1,6 +1,5 @@
-import sys
-
-from .Units import Mage, Archer, Knight
+from contextlib import redirect_stdout
+from Hillel_Python.HomeWork.lesson14.Units import Mage, Archer, Knight
 
 MAGIC_TYPE = {
     'f': 'Fire',
@@ -23,7 +22,9 @@ mage = Mage('John', 'SunShine', magic=MAGIC_TYPE['f'])
 archer = Archer('Jack', 'MoonShine', bow_type=BOW_TYPE['cb'])
 knight = Knight('John', 'RiverFrost', weapon_type=WEAPON_TYPE['a'])
 
-sys.stdout = open('output.txt', 'w')
+with open('output.txt', 'w') as f:
+    with redirect_stdout(f):
+        print(pow)
 
 print(mage)
 print(archer)
@@ -48,5 +49,3 @@ print('------------')
 print(mage)
 print(archer)
 print(knight)
-
-sys.stdout.close()
