@@ -28,6 +28,6 @@ def create_right_triangle(x1y1):
     print(f"A{x1y1}, B{x2y2}, C{x3y3} S = {s}")
 
 
-a = (random.uniform(-100.0, 100.0), random.uniform(-100.0, 100.0))
-create_right_triangle(a)
+side = (random.uniform(-100.0, 100.0), random.uniform(-100.0, 100.0))
+create_right_triangle(side)
 generate_random_triangle()
