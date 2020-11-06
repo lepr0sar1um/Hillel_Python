@@ -28,17 +28,17 @@ def generate_data_for_file(file_name):
             ]
     }
     crete_file_and_folder(data, file_name)
-    return print("!")
+    return print("data has been generated")
 
 
 def crete_file_and_folder(data, file_name):
-    name = 'tmp_folder'
-    if not os.path.isdir(name):
-        os.mkdir(name)
-    with open(file_name, 'w') as json_file:
+    path = 'tmp_folder'
+    if not os.path.exists(path):
+        os.mkdir(path)
+    with open(os.path.join(path, file_name), 'w') as json_file:
         json.dump(data, json_file, indent=2)
 
-    return print("done")
+    return print("file has been written")
 
 
 file = generate_file_name()

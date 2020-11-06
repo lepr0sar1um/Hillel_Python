@@ -1,0 +1,23 @@
+{
+  "filename": "4_35gd",
+  "width": 106,
+  "objects": [
+    {
+      "object0": {
+        "class": "4",
+        "xmin": 0.0,
+        "xmax": 26.5
+      },
+      "object2": {
+        "class": "3",
+        "xmin": 53.0,
+        "xmax": 79.5
+      },
+      "object3": {
+        "class": "5",
+        "xmin": 79.5,
+        "xmax": 106.0
+      }
+    }
+  ]
+}
